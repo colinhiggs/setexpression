@@ -121,5 +121,20 @@ class TestLDAPFilterSetExpression(unittest.TestCase):
             [p(3), p(4)]
         )
 
+    def test_minus(self):
+        '''A nminus expression. Check filter and correct membership.'''
+        self.expr.expression=json.loads(
+            '["minus", "{}", "{}"]'.format(g('B'), g('A'))
+        )
+        self.assertEqual(
+            self.expr.evaluate(),
+            '(&(memberOf={})(!(memberOf={})))'.format(g('B'),g('A'))
+        )
+        self.assertListEqual(
+            sorted(self.expr.members),
+            [p(2)]
+        )
+
+
 if __name__ == '__main__':
     unittest.main()
