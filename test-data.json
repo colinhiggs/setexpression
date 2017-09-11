@@ -1,0 +1,69 @@
+{
+  "entries": [
+    {
+      "dn": "uid=1,ou=people,ou=top",
+      "raw": {
+        "cn": "1",
+        "memberOf": [
+          "cn=A,ou=groups,ou=top",
+          "cn=B,ou=groups,ou=top"
+        ]
+      }
+    },
+    {
+      "dn": "uid=2,ou=people,ou=top",
+      "raw": {
+        "cn": "2",
+        "memberOf": [
+          "cn=B,ou=groups,ou=top",
+          "cn=C,ou=groups,ou=top"
+        ]
+      }
+    },
+    {
+      "dn": "uid=3,ou=people,ou=top",
+      "raw": {
+        "cn": "3",
+        "memberOf": [
+          "cn=C,ou=groups,ou=top",
+          "cn=D,ou=groups,ou=top"
+        ]
+      }
+    },
+    {
+      "dn": "uid=4,ou=people,ou=top",
+      "raw": {
+        "cn": "4",
+        "memberOf": [
+          "cn=D,ou=groups,ou=top",
+          "cn=E,ou=groups,ou=top"
+        ]
+      }
+    },
+    {
+      "dn": "cn=A,ou=groups,ou=top",
+      "raw": {
+      }
+    },
+    {
+      "dn": "cn=B,ou=groups,ou=top",
+      "raw": {
+      }
+    },
+    {
+      "dn": "cn=C,ou=groups,ou=top",
+      "raw": {
+      }
+    },
+    {
+      "dn": "cn=D,ou=groups,ou=top",
+      "raw": {
+      }
+    },
+    {
+      "dn": "cn=E,ou=groups,ou=top",
+      "raw": {
+      }
+    }
+  ]
+}
